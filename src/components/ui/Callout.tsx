@@ -3,9 +3,9 @@ import type { ReactNode } from "react";
 /** Highlights a single important fact. */
 export function Callout({ title, children }: { title: string; children: ReactNode }) {
   return (
-    <div className="border-accent bg-surface rounded-lg border-l-4 p-5">
-      <h3 className="font-display mb-2 text-2xl">{title}</h3>
+    <aside className="border-border border p-6">
+      <h3 className="border-border mb-4 border-b pb-3 font-medium">{title}</h3>
       <div className="text-muted">{children}</div>
-    </div>
+    </aside>
   );
 }
