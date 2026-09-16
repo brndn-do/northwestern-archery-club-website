@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Oswald } from "next/font/google";
+import { Inter } from "next/font/google";
 import type { ReactNode } from "react";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { SiteHeader } from "@/components/layout/SiteHeader";
@@ -9,8 +9,6 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 
-const oswald = Oswald({ subsets: ["latin"], variable: "--font-oswald", display: "swap" });
-
 export const metadata: Metadata = {
   metadataBase: new URL(site.origin),
   title: { default: site.name, template: `%s | ${site.shortName}` },
@@ -19,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${oswald.variable}`}>
+    <html lang="en" className={`${inter.variable}`}>
       <body className="flex min-h-screen flex-col font-sans antialiased">
         <SkipLink />
         <SiteHeader />
