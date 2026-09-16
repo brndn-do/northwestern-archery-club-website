@@ -7,7 +7,7 @@ export function SiteFooter() {
     <footer className="border-border bg-surface border-t">
       <div className="mx-auto w-full max-w-5xl px-4 py-10 sm:px-6">
         <h2 className="font-display mb-4 text-2xl">Stay in the loop</h2>
-        <ul className="mb-8 grid gap-3 sm:grid-cols-2">
+        <ul className="mb-8 flex flex-wrap gap-x-6 gap-y-3">
           {socials.map((social) => (
             <li key={social.label}>
               <CtaLink
@@ -16,19 +16,19 @@ export function SiteFooter() {
               >
                 {social.label}
               </CtaLink>
-              <p className="text-muted text-sm">{social.detail}</p>
             </li>
           ))}
           <li>
             <CtaLink href={emailLink} className="hover:text-accent underline underline-offset-4">
               {site.email}
             </CtaLink>
-            <p className="text-muted text-sm">Email the club</p>
           </li>
         </ul>
+        <p className="text-muted mb-1 text-sm">
+          A student group at Northwestern University, founded {site.founded}.
+        </p>
         <p className="text-muted text-sm">
-          {site.name} &middot; Founded {site.founded} &middot; A student group at Northwestern
-          University.
+          &copy; {new Date().getFullYear()} {site.name}
         </p>
       </div>
     </footer>
