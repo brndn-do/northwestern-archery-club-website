@@ -18,77 +18,81 @@ const previewQuestions = faq.slice(0, 4);
 export default function HomePage() {
   return (
     <>
-      <Container className="py-16 sm:py-24">
-        <h1 className="font-display max-w-3xl text-5xl sm:text-6xl">{site.name}</h1>
-        <p className="text-muted mt-4 max-w-2xl text-lg">{site.tagline}</p>
-        <div className="mt-8 flex flex-wrap items-center gap-4">
-          <ButtonLink href={site.links.signup}>Sign up for a practice</ButtonLink>
-          <ButtonLink href={url("/join")} variant="secondary">
-            How to join
-          </ButtonLink>
-        </div>
+      <Container className="pt-10 pb-2">
+        <p className="label text-muted mb-3">
+          Student group &middot; Northwestern &middot; est. {site.founded}
+        </p>
+        <h1 className="text-3xl leading-snug sm:text-4xl">{site.name}</h1>
+        <p className="text-muted mt-3">{site.tagline}</p>
       </Container>
 
-      <Section surface>
-        <dl className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <div>
-            <dt className="text-sm font-medium tracking-wide uppercase">When</dt>
-            <dd className="text-muted mt-1 text-sm">
+      <Section title="The practicals">
+        <dl className="text-sm">
+          <div className="border-border flex gap-4 border-t py-2">
+            <dt className="label text-muted w-24 shrink-0 pt-0.5">Practices</dt>
+            <dd>
               {practices.schedule.map((practice) => (
                 <span key={practice.day} className="block">
-                  {practice.day} {practice.startTime}&ndash;{practice.endTime}
+                  {practice.day}, {practice.startTime}&ndash;{practice.endTime}
                 </span>
               ))}
             </dd>
           </div>
-          <div>
-            <dt className="text-sm font-medium tracking-wide uppercase">Where</dt>
-            <dd className="text-muted mt-1 text-sm">{practices.location}</dd>
+          <div className="border-border flex gap-4 border-t py-2">
+            <dt className="label text-muted w-24 shrink-0 pt-0.5">Where</dt>
+            <dd>{practices.location}</dd>
           </div>
-          <div>
-            <dt className="text-sm font-medium tracking-wide uppercase">Cost</dt>
-            <dd className="text-muted mt-1 text-sm">
+          <div className="border-border flex gap-4 border-t py-2">
+            <dt className="label text-muted w-24 shrink-0 pt-0.5">Dues</dt>
+            <dd>
               {dues.perPractice}, or {dues.perQuarter}
             </dd>
           </div>
-          <div>
-            <dt className="text-sm font-medium tracking-wide uppercase">Equipment</dt>
-            <dd className="text-muted mt-1 text-sm">
-              Provided. Recurve barebow, plus instruction for beginners.
+          <div className="border-border flex gap-4 border-t py-2">
+            <dt className="label text-muted w-24 shrink-0 pt-0.5">Equipment</dt>
+            <dd>Provided. Recurve barebow, with instruction for beginners.</dd>
+          </div>
+          <div className="border-border flex gap-4 border-t py-2">
+            <dt className="label text-muted w-24 shrink-0 pt-0.5">Signing up</dt>
+            <dd>
+              <ButtonLink href={site.links.signup}>Sign up for a practice</ButtonLink>
             </dd>
           </div>
         </dl>
       </Section>
 
       <Section>
-        <Callout title="Try us for free">
+        <Callout title="Free trial weekend">
           <p>{practices.freeTrial}</p>
         </Callout>
       </Section>
 
-      <Section title="What to expect" surface>
-        <div className="grid gap-4 sm:grid-cols-3">
+      <Section title="Before your first practice">
+        <div>
           <Card title="No experience needed">
-            We are recreational and beginner-focused. Most people who show up have never shot
-            before.
+            Most people at their first practice have never shot a bow. That is normal here.
           </Card>
-          <Card title="Certified instructors">
-            Most of our officers are USA Archery-certified Instructors, and they run the beginner
-            lessons.
+          <Card title="We teach you">
+            Most of our officers are USA Archery-certified Instructors and run the beginner lessons.
           </Card>
-          <Card title="Gear is on us">
-            Club equipment is recurve barebow. Bring closed-toed shoes and nothing else.
+          <Card title="Equipment provided">
+            Club bows are recurve barebow. Wear closed-toed shoes; bring nothing else.
           </Card>
         </div>
+        <p className="mt-5 text-sm">
+          <CtaLink href={url("/join")} className="text-accent underline underline-offset-4">
+            Full details on joining
+          </CtaLink>
+        </p>
       </Section>
 
-      <Section title="At the range">
+      <Section title="Photographs">
         <PhotoGrid photos={photos} />
       </Section>
 
-      <Section title="Common questions" surface>
+      <Section title="Questions we get a lot">
         <FaqAccordion entries={previewQuestions} />
-        <p className="mt-8">
+        <p className="mt-5 text-sm">
           <CtaLink href={url("/faq")} className="text-accent underline underline-offset-4">
             Read all questions
           </CtaLink>

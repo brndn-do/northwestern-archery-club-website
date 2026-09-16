@@ -1,11 +1,11 @@
 import type { ReactNode } from "react";
 
-/** Highlights a single important fact. */
+/** An indented aside. */
 export function Callout({ title, children }: { title: string; children: ReactNode }) {
   return (
-    <div className="border-accent bg-surface rounded-lg border-l-4 p-5">
-      <h3 className="font-display mb-2 text-2xl">{title}</h3>
+    <aside className="border-accent border-l-2 pl-5">
+      <h3 className="label text-accent mb-2">{title}</h3>
       <div className="text-muted">{children}</div>
-    </div>
+    </aside>
   );
 }

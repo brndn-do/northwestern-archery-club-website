@@ -11,20 +11,18 @@ const navigation = [
 export function SiteHeader() {
   return (
     <header className="border-border border-b">
-      <div className="mx-auto flex w-full max-w-5xl flex-wrap items-center justify-between gap-4 px-4 py-4 sm:px-6">
+      <div className="mx-auto w-full max-w-2xl px-4 py-5 sm:px-6">
         <Link href="/" className="flex items-center gap-3">
           <span
-            className="border-border text-muted rounded-md border border-dashed px-2 py-1 text-[10px] leading-tight"
+            className="border-border text-muted label border px-2 py-1 leading-tight"
             aria-hidden="true"
           >
-            Replace with
-            <br />
-            club logo
+            Logo
           </span>
-          <span className="font-display text-xl">{site.shortName}</span>
+          <span className="text-lg">{site.shortName}</span>
         </Link>
-        <nav aria-label="Main">
-          <ul className="flex flex-wrap gap-4 text-sm sm:gap-6">
+        <nav aria-label="Main" className="mt-3">
+          <ul className="label text-muted flex flex-wrap gap-4">
             {navigation.map((item) => (
               <li key={item.href}>
                 <Link href={item.href} className="hover:text-accent">

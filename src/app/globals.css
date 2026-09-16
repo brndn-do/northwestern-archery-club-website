@@ -1,29 +1,30 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #ffffff;
-  --color-surface: #f0f0f0;
-  --color-border: #e1e1e1;
-  --color-text: #171717;
-  --color-muted: #575757;
+  --color-bg: #fdfdfc;
+  --color-surface: #f4f4f2;
+  --color-border: #d9d9d4;
+  --color-text: #1c1c1a;
+  --color-muted: #5a5a55;
   --color-accent: #4e2a84;
-  --color-accent-contrast: #ffffff;
+  --color-accent-contrast: #fdfdfc;
 
-  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-plex-serif), ui-serif, Georgia, serif;
+  --font-display: var(--font-plex-serif), ui-serif, Georgia, serif;
+  --font-label: var(--font-plex-mono), ui-monospace, SFMono-Regular, monospace;
 }
 
 /* @theme is hoisted out of at-rules, so the dark palette overrides the
    generated custom properties directly. */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #121212;
-    --color-surface: #1c1c1c;
-    --color-border: #2e2e2e;
-    --color-text: #ededed;
-    --color-muted: #a3a3a3;
-    --color-accent: #a78bdb;
-    --color-accent-contrast: #121212;
+    --color-bg: #161615;
+    --color-surface: #1f1f1d;
+    --color-border: #33332f;
+    --color-text: #e8e8e4;
+    --color-muted: #9d9d96;
+    --color-accent: #b79ae4;
+    --color-accent-contrast: #161615;
   }
 }
 
@@ -42,4 +43,12 @@
     outline: 2px solid var(--color-accent);
     outline-offset: 2px;
   }
+}
+
+/* Small uppercase monospace, used for field labels and section markers. */
+@utility label {
+  font-family: var(--font-label);
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
