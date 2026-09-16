@@ -1,11 +1,11 @@
 import type { ReactNode } from "react";
 
-/** Highlights a single important fact. */
+/** A pull quote set off from the body copy. */
 export function Callout({ title, children }: { title: string; children: ReactNode }) {
   return (
-    <div className="border-accent bg-surface rounded-lg border-l-4 p-5">
-      <h3 className="font-display mb-2 text-2xl">{title}</h3>
+    <aside className="border-text mx-auto max-w-2xl border-y py-6 text-center">
+      <h3 className="font-display mb-2 text-2xl italic">{title}</h3>
       <div className="text-muted">{children}</div>
-    </div>
+    </aside>
   );
 }

@@ -3,8 +3,8 @@ import { CtaLink } from "./CtaLink";
 import type { SiteUrl } from "@/lib/content/url";
 
 const styles = {
-  primary: "bg-accent text-accent-contrast hover:opacity-90",
-  secondary: "border border-border hover:border-accent hover:text-accent",
+  primary: "border-text border-b-2 pb-0.5",
+  secondary: "border-border border-b pb-0.5",
 } as const;
 
 type ButtonLinkProps = {
@@ -13,13 +13,10 @@ type ButtonLinkProps = {
   variant?: keyof typeof styles;
 };
 
-/** A {@link CtaLink} styled as a call-to-action button. */
+/** A {@link CtaLink} rendered as a ruled text link. */
 export function ButtonLink({ href, children, variant = "primary" }: ButtonLinkProps) {
   return (
-    <CtaLink
-      href={href}
-      className={`inline-flex items-center rounded-md px-5 py-2.5 text-sm font-medium ${styles[variant]}`}
-    >
+    <CtaLink href={href} className={`kicker hover:text-accent inline-block ${styles[variant]}`}>
       {children}
     </CtaLink>
   );
