@@ -13,8 +13,10 @@
   --font-display: var(--font-instrument-serif), ui-serif, Georgia, serif;
 }
 
+/* @theme is hoisted out of at-rules, so the dark palette overrides the
+   generated custom properties directly. */
 @media (prefers-color-scheme: dark) {
-  @theme {
+  :root {
     --color-bg: #131019;
     --color-surface: #1c1826;
     --color-border: #2f2840;

@@ -13,7 +13,7 @@ type CtaLinkProps = {
  *
  * Configured targets render as links; external ones open in a new tab.
  * Placeholder targets render as non-navigating text stating what must replace
- * them.
+ * them, and ignore `className`.
  */
 export function CtaLink({ href, children, className }: CtaLinkProps) {
   const target = resolveLinkTarget(href);
@@ -21,7 +21,7 @@ export function CtaLink({ href, children, className }: CtaLinkProps) {
   if (target.kind === "placeholder") {
     return (
       <span
-        className={`border-border text-muted inline-flex flex-col gap-1 rounded-md border border-dashed px-4 py-2 ${className ?? ""}`}
+        className="border-border text-muted inline-flex flex-col gap-1 rounded-md border border-dashed px-4 py-2"
         aria-disabled="true"
       >
         <span>{children}</span>

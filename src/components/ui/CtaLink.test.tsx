@@ -45,3 +45,15 @@ describe("CtaLink", () => {
     expect(hint === null).toBe(kind === "internal");
   });
 });
+
+describe("CtaLink placeholder styling", () => {
+  it("ignores caller styling so a placeholder never looks like a live control", () => {
+    render(
+      <CtaLink href={placeholder("the signup form URL")} className="bg-accent">
+        Sign up
+      </CtaLink>,
+    );
+
+    expect(screen.getByText("Sign up").closest("[aria-disabled]")).not.toHaveClass("bg-accent");
+  });
+});
