@@ -1,29 +1,29 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #ffffff;
-  --color-surface: #f0f0f0;
-  --color-border: #e1e1e1;
-  --color-text: #171717;
-  --color-muted: #575757;
+  --color-bg: #faf8f3;
+  --color-surface: #f1ece0;
+  --color-border: #d4cbb8;
+  --color-text: #1f1b16;
+  --color-muted: #5d5648;
   --color-accent: #4e2a84;
-  --color-accent-contrast: #ffffff;
+  --color-accent-contrast: #faf8f3;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-oswald), ui-sans-serif, system-ui, sans-serif;
 }
 
 /* @theme is hoisted out of at-rules, so the dark palette overrides the
    generated custom properties directly. */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #121212;
-    --color-surface: #1c1c1c;
-    --color-border: #2e2e2e;
-    --color-text: #ededed;
-    --color-muted: #a3a3a3;
-    --color-accent: #a78bdb;
-    --color-accent-contrast: #121212;
+    --color-bg: #14120e;
+    --color-surface: #1e1b15;
+    --color-border: #35301f;
+    --color-text: #ece7dc;
+    --color-muted: #a49b89;
+    --color-accent: #b79ae4;
+    --color-accent-contrast: #14120e;
   }
 }
 
@@ -38,8 +38,19 @@
     color: var(--color-text);
   }
 
+  .font-display {
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+  }
+
   :focus-visible {
     outline: 2px solid var(--color-accent);
     outline-offset: 2px;
   }
+}
+
+@utility pinned {
+  border: 2px solid var(--color-text);
+  background-color: var(--color-bg);
+  box-shadow: 4px 4px 0 var(--color-border);
 }

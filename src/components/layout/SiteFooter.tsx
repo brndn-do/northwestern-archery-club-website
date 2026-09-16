@@ -4,10 +4,10 @@ import { socials } from "@content/data/socials";
 
 export function SiteFooter() {
   return (
-    <footer className="border-border bg-surface border-t">
+    <footer className="border-text mt-8 border-t-2">
       <div className="mx-auto w-full max-w-5xl px-4 py-10 sm:px-6">
-        <h2 className="font-display mb-4 text-2xl">Stay in the loop</h2>
-        <ul className="mb-8 flex flex-wrap gap-x-6 gap-y-3">
+        <h2 className="font-display mb-4 text-xl">Find us</h2>
+        <ul className="mb-8 flex flex-wrap gap-x-6 gap-y-2 text-sm">
           {socials.map((social) => (
             <li key={social.label}>
               <CtaLink
@@ -24,7 +24,7 @@ export function SiteFooter() {
             </CtaLink>
           </li>
         </ul>
-        <p className="text-muted text-sm">
+        <p className="text-muted text-xs">
           &copy; {new Date().getFullYear()} {site.name}
         </p>
       </div>
