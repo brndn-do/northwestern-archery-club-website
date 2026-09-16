@@ -26,7 +26,7 @@ public site.
 | --------------------------------------------------------- | ---------------------- |
 | Club name, tagline, email, signup and waiver links        | `data/site.ts`         |
 | Instagram, GroupMe, Discord, listserv                     | `data/socials.ts`      |
-| Practice location, days, times, free trial weekend        | `data/practices.ts`    |
+| Practice location, days, times, free practices            | `data/practices.ts`    |
 | Dues amounts, payment methods                             | `data/dues.ts`         |
 | Eligibility, signup steps, what to wear, day-of checklist | `data/join.ts`         |
 | Questions and answers on the FAQ page                     | `data/faq.ts`          |

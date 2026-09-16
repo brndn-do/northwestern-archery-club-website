@@ -20,8 +20,8 @@ export const practices: {
     { day: "Saturday", startTime: "7:15 PM", endTime: "8:45 PM" },
   ],
   freeTrial:
-    "At the start of every quarter we run a free trial weekend — one Friday and " +
-    "one Saturday practice, free for new students, with no commitment.",
+    "At the start of every quarter, the first Friday and Saturday practices are free. " +
+    "Come to either one before deciding whether to pay dues.",
   capacity:
     "Equipment and space are limited, so signups are capped and filled first come, " +
     "first served. If a practice is full, you can join the waitlist.",

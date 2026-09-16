@@ -21,11 +21,8 @@ export default function HomePage() {
       <Container className="py-16 sm:py-24">
         <h1 className="font-display max-w-3xl text-5xl sm:text-6xl">{site.name}</h1>
         <p className="text-muted mt-4 max-w-2xl text-lg">{site.tagline}</p>
-        <div className="mt-8 flex flex-wrap items-center gap-4">
+        <div className="mt-8">
           <ButtonLink href={site.links.signup}>Sign up for a practice</ButtonLink>
-          <ButtonLink href={url("/join")} variant="secondary">
-            How to join
-          </ButtonLink>
         </div>
       </Container>
 
@@ -61,28 +58,27 @@ export default function HomePage() {
       </Section>
 
       <Section>
-        <Callout title="Try us for free">
+        <Callout title="The first weekend each quarter is free">
           <p>{practices.freeTrial}</p>
         </Callout>
       </Section>
 
-      <Section title="What to expect" surface>
+      <Section title="Before your first practice" surface>
         <div className="grid gap-4 sm:grid-cols-3">
           <Card title="No experience needed">
-            We are recreational and beginner-focused. Most people who show up have never shot
-            before.
+            Most people at their first practice have never shot a bow. That is normal here.
           </Card>
-          <Card title="Certified instructors">
-            Most of our officers are USA Archery-certified Instructors, and they run the beginner
+          <Card title="Who runs practice">
+            Most of our officers are USA Archery-certified Instructors. They run the beginner
             lessons.
           </Card>
-          <Card title="Gear is on us">
-            Club equipment is recurve barebow. Bring closed-toed shoes and nothing else.
+          <Card title="Equipment">
+            Club bows are recurve barebow. Wear closed-toed shoes; bring nothing else.
           </Card>
         </div>
       </Section>
 
-      <Section title="At the range">
+      <Section title="Photos">
         <PhotoGrid photos={photos} />
       </Section>
 

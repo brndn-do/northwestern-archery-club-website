@@ -23,8 +23,8 @@ export const faq: readonly FaqEntry[] = defineContent(
       category: "Getting started",
       question: "Can I try the club before paying anything?",
       answer:
-        "Yes. At the start of every quarter we run a free trial weekend — one Friday and one " +
-        "Saturday practice that are free for new students, with no commitment.",
+        "Yes. The first Friday and Saturday practices of each quarter are free, so you can " +
+        "come and see what it is like before paying dues.",
     },
     {
       category: "Logistics",
