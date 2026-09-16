@@ -1,11 +1,18 @@
 import type { ReactNode } from "react";
 
-/** Highlights a single important fact. */
+/**
+ * Highlights a single important fact.
+ *
+ * The title straddles the top border, so it needs the page background behind
+ * it: place this on the base background, not inside a surface band.
+ */
 export function Callout({ title, children }: { title: string; children: ReactNode }) {
   return (
-    <div className="border-accent bg-surface rounded-lg border-l-4 p-5">
-      <h3 className="font-display mb-2 text-2xl">{title}</h3>
+    <aside className="border-border relative border px-6 pt-7 pb-6">
+      <h3 className="bg-bg text-accent absolute -top-2 left-5 px-2 text-xs font-medium tracking-[0.12em] uppercase">
+        {title}
+      </h3>
       <div className="text-muted">{children}</div>
-    </div>
+    </aside>
   );
 }
