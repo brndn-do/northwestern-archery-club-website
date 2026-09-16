@@ -24,9 +24,6 @@ export function SiteFooter() {
             </CtaLink>
           </li>
         </ul>
-        <p className="text-muted mb-1 text-sm">
-          A student group at Northwestern University, founded {site.founded}.
-        </p>
         <p className="text-muted text-sm">
           &copy; {new Date().getFullYear()} {site.name}
         </p>
