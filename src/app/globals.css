@@ -9,9 +9,8 @@
   --color-accent: #4e2a84;
   --color-accent-contrast: #fdfdfc;
 
-  --font-sans: var(--font-plex-serif), ui-serif, Georgia, serif;
-  --font-display: var(--font-plex-serif), ui-serif, Georgia, serif;
-  --font-label: var(--font-plex-mono), ui-monospace, SFMono-Regular, monospace;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }
 
 /* @theme is hoisted out of at-rules, so the dark palette overrides the
@@ -45,9 +44,8 @@
   }
 }
 
-/* Small uppercase monospace, used for field labels and section markers. */
+/* Small uppercase text, used for field labels and section markers. */
 @utility label {
-  font-family: var(--font-label);
   font-size: 0.6875rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
