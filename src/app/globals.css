@@ -17,13 +17,13 @@
    generated custom properties directly. */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #131019;
-    --color-surface: #1c1826;
-    --color-border: #2f2840;
-    --color-text: #eceaf2;
-    --color-muted: #a8a1b8;
+    --color-bg: #121212;
+    --color-surface: #1c1c1c;
+    --color-border: #2e2e2e;
+    --color-text: #ededed;
+    --color-muted: #a3a3a3;
     --color-accent: #a78bdb;
-    --color-accent-contrast: #131019;
+    --color-accent-contrast: #121212;
   }
 }
 
