@@ -38,7 +38,7 @@ export const join: {
     },
     {
       title: "Pay your dues",
-      body: "An exec member will collect dues during practice.",
+      body: "For any paid practices, an exec member will collect dues during practice.",
     },
   ],
   eligibility: {
@@ -48,11 +48,11 @@ export const join: {
     options: [
       {
         title: "Sign a liability waiver",
-        body: "Dated for that practice. This is the path for first-timers and new members — we have copies at practice.",
+        body: "Dated for that practice. This is the path for first-timers and new members. We will have copies at practice for you to sign.",
       },
       {
-        title: "Join the archery roster on IMLeagues",
-        body: "With a verified Health History Questionnaire. This is required to attend practices regularly, and must be redone every academic year.",
+        title: "Join the archery roster on IMLeagues, and complete the Health History Questionnaire (HHQ) and wait for approval",
+        body: "This is required to attend practices regularly, and must be redone every academic year.",
       },
     ],
   },

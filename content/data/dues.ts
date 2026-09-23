@@ -15,6 +15,6 @@ export const dues = defineContent("content/data/dues.ts", duesSchema, {
   notes: [
     "Dues are collected in person during practice by an exec member.",
     "Set up Venmo or Zelle before you arrive, or bring cash. We cannot make change.",
-    "Dues pay for the equipment and instruction we provide to everyone.",
+    "Dues help us pay for the equipment and instruction we provide to everyone.",
   ],
 });
