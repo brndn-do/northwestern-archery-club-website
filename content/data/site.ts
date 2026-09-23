@@ -23,8 +23,7 @@ export const site = defineContent("content/data/site.ts", siteSchema, {
   name: "Northwestern University Archery Club",
   shortName: "NU Archery",
   tagline:
-    "A student-run archery club at Northwestern. Most people who turn up have never " +
-    "shot before.",
+    "A student-run archery club at Northwestern. All experience levels welcome.",
   description:
     "A beginner-focused, recreational archery club at Northwestern University. " +
     "Equipment and instruction provided. Two practices a week at Blomquist Recreation Center.",

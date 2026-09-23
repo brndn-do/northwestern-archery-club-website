@@ -21,9 +21,6 @@ export default function HomePage() {
       <Container className="py-16 sm:py-24">
         <h1 className="font-display max-w-3xl text-5xl sm:text-6xl">{site.name}</h1>
         <p className="text-muted mt-4 max-w-2xl text-lg">{site.tagline}</p>
-        <div className="mt-8">
-          <ButtonLink href={site.links.signup}>Sign up for a practice</ButtonLink>
-        </div>
       </Container>
 
       <Section surface>
@@ -45,7 +42,7 @@ export default function HomePage() {
           <div>
             <dt className="text-sm font-medium tracking-wide uppercase">Cost</dt>
             <dd className="text-muted mt-1 text-sm">
-              {dues.perPractice}, or {dues.perQuarter}
+              {dues.perPractice}, or {dues.perQuarter}, except for our quarterly free practices.
             </dd>
           </div>
           <div>
@@ -58,7 +55,7 @@ export default function HomePage() {
       </Section>
 
       <Section>
-        <Callout title="The first weekend each quarter is free">
+        <Callout title="Free practices">
           <p>{practices.freeTrial}</p>
         </Callout>
       </Section>
