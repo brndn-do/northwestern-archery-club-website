@@ -22,7 +22,7 @@ export default function HomePage() {
         <p className="text-muted mt-4 max-w-2xl text-lg">{site.tagline}</p>
       </Container>
 
-      <Section surface>
+      <Section>
         <dl className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <dt className="text-sm font-medium tracking-wide uppercase">When</dt>
@@ -59,7 +59,7 @@ export default function HomePage() {
         </Callout>
       </Section>
 
-      <Section title="Photos" surface>
+      <Section title="Photos">
         <PhotoGrid photos={photos} />
       </Section>
 
@@ -72,7 +72,7 @@ export default function HomePage() {
         </p>
       </Section>
 
-      <Section title="Common questions" surface>
+      <Section title="Common questions">
         <FaqAccordion entries={previewQuestions} />
         <p className="mt-8">
           <CtaLink href={url("/faq")} className="link">

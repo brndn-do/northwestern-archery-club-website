@@ -28,7 +28,7 @@ export default function ContactPage() {
         </p>
       </Container>
 
-      <Section title="Find us online" surface>
+      <Section title="Find us online">
         <ul className="grid gap-4 sm:grid-cols-2">
           {socials.map((social) => (
             <li key={social.label} className="border-border rounded-lg border p-5">

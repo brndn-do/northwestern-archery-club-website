@@ -22,8 +22,7 @@ const siteSchema = z.object({
 export const site = defineContent("content/data/site.ts", siteSchema, {
   name: "Northwestern University Archery Club",
   shortName: "NU Archery",
-  tagline:
-    "A student-run archery club at Northwestern. All experience levels welcome.",
+  tagline: "A student-run archery club at Northwestern. All experience levels welcome.",
   description:
     "A beginner-focused, recreational archery club at Northwestern University. " +
     "Equipment and instruction provided. Two practices a week at Blomquist Recreation Center.",
@@ -31,10 +30,14 @@ export const site = defineContent("content/data/site.ts", siteSchema, {
   email: "archery@u.northwestern.edu",
   origin: "https://northwestern-archery.netlify.app",
   links: {
-    signup: url("https://docs.google.com/document/d/1s9ig-MvM_hrYpQllxU1MUBe9noAdaCYpl765OjSpNOM/edit?usp=sharing"),
+    signup: url(
+      "https://docs.google.com/document/d/1s9ig-MvM_hrYpQllxU1MUBe9noAdaCYpl765OjSpNOM/edit?usp=sharing",
+    ),
     waiver: url("https://drive.google.com/file/d/1ITFt-ICYkr7GVEWyb864dTsivwVHlqGb/"),
-    iMLeagues: url("https://docs.google.com/document/d/1nKx5UlVYWY73HNGO5rsEYa2JUEgNMpPDdmea-foUAx4/edit?usp=sharing"),
-    studentActivitiesAssistanceFund: url("https://www.northwestern.edu/studentorgs/saaf/")
+    iMLeagues: url(
+      "https://docs.google.com/document/d/1nKx5UlVYWY73HNGO5rsEYa2JUEgNMpPDdmea-foUAx4/edit?usp=sharing",
+    ),
+    studentActivitiesAssistanceFund: url("https://www.northwestern.edu/studentorgs/saaf/"),
   },
 });
 

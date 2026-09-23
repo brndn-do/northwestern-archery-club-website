@@ -56,7 +56,8 @@ export const join: {
         body: "Dated for that practice. This is the path for first-timers and new members. We will have copies at practice for you to sign.",
       },
       {
-        title: "Join the archery roster on IMLeagues, and complete the Health History Questionnaire (HHQ) and wait for approval",
+        title:
+          "Join the archery roster on IMLeagues, and complete the Health History Questionnaire (HHQ) and wait for approval",
         body: "This is required to attend practices regularly, and must be redone every academic year.",
       },
     ],

@@ -30,7 +30,8 @@ export const faq: readonly FaqEntry[] = defineContent(
     {
       category: "Getting started",
       question: "Where do you send out announcements?",
-      answer: "We send out announcements via our email list and GroupMe. Links to join both are at the bottom."
+      answer:
+        "We send out announcements via our email list and GroupMe. Links to join both are at the bottom.",
     },
     {
       category: "Getting started",
@@ -82,14 +83,14 @@ export const faq: readonly FaqEntry[] = defineContent(
       category: "Logistics",
       question: "Do I need to sign up in advance?",
       answer:
-      "Yes. Equipment and space are limited, so signups are capped and filled first come, " +
-      "first served. If a practice is full you can join a waitlist.",
+        "Yes. Equipment and space are limited, so signups are capped and filled first come, " +
+        "first served. If a practice is full you can join a waitlist.",
     },
     {
       category: "Logistics",
       question: "What if I signed up but cannot make it?",
       answer:
-      "Remove yourself from the signup list or waitlist as soon as possible so someone else can take your spot.",
+        "Remove yourself from the signup list or waitlist as soon as possible so someone else can take your spot.",
     },
     {
       category: "Logistics",

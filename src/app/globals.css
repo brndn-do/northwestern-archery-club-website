@@ -1,8 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bg: #ffffff;
-  --color-surface: #f0f0f0;
+  --color-bg: #fdfcff;
   --color-border: #e1e1e1;
   --color-text: #171717;
   --color-muted: #575757;
@@ -18,8 +17,7 @@
    generated custom properties directly. */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #121212;
-    --color-surface: #1c1c1c;
+    --color-bg: #1c1b1d;
     --color-border: #2e2e2e;
     --color-text: #ededed;
     --color-muted: #a3a3a3;

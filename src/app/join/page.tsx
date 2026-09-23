@@ -29,7 +29,7 @@ export default function JoinPage() {
         </div>
       </Container>
 
-      <Section title="How it works" surface>
+      <Section title="How it works">
         <ol className="grid gap-6 sm:grid-cols-2">
           {join.steps.map((step, index) => (
             <li key={step.title}>
@@ -64,7 +64,7 @@ export default function JoinPage() {
         </div>
       </Section>
 
-      <Section title="Signups" surface>
+      <Section title="Signups">
         <p className="text-muted max-w-2xl">{practices.capacity}</p>
       </Section>
 
@@ -82,8 +82,8 @@ export default function JoinPage() {
         </ul>
         <Callout title="If dues are a burden">
           <p className="mb-3">
-            Please look into the Student Activities Assistance Fund (SAAF), or reach out to us and we will
-            see what we can do.
+            Please look into the Student Activities Assistance Fund (SAAF), or reach out to us and
+            we will see what we can do.
           </p>
           <CtaLink href={site.links.studentActivitiesAssistanceFund} className="link text-sm">
             Student Activities Assistance Fund
@@ -91,7 +91,7 @@ export default function JoinPage() {
         </Callout>
       </Section>
 
-      <Section title="On the day of practice" surface>
+      <Section title="On the day of practice">
         <div className="grid gap-8 sm:grid-cols-2">
           <div>
             <h3 className="mb-3 font-medium">Wear</h3>
