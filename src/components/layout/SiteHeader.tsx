@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { site } from "@content/data/site";
+import Image from "next/image";
 
 const navigation = [
   { href: "/about", label: "About" },
@@ -13,14 +14,13 @@ export function SiteHeader() {
     <header className="border-border border-b">
       <div className="mx-auto flex w-full max-w-5xl flex-wrap items-center justify-between gap-4 px-4 py-4 sm:px-6">
         <Link href="/" className="flex items-center gap-3">
-          <span
-            className="border-border text-muted rounded-md border border-dashed px-2 py-1 text-[10px] leading-tight"
-            aria-hidden="true"
-          >
-            Replace with
-            <br />
-            club logo
-          </span>
+          <Image
+            src="/images/logo.png"
+            width={36}
+            height={36}
+            alt="Logo"
+            className="rounded-full"
+          />
           <span className="font-display text-xl">{site.shortName}</span>
         </Link>
         <nav aria-label="Main">
