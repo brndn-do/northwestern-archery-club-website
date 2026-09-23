@@ -14,7 +14,7 @@ const siteSchema = z.object({
   links: z.object({
     signup: siteUrlSchema,
     waiver: siteUrlSchema,
-    healthHistoryQuestionnaire: siteUrlSchema,
+    iMLeagues: siteUrlSchema,
     studentActivitiesAssistanceFund: siteUrlSchema,
   }),
 });
@@ -31,14 +31,10 @@ export const site = defineContent("content/data/site.ts", siteSchema, {
   email: "archery@u.northwestern.edu",
   origin: "https://northwestern-archery.netlify.app",
   links: {
-    signup: placeholder("the practice signup form URL (IMLeagues or Google Form)"),
-    waiver: placeholder("a link to the liability waiver PDF, if one can be hosted"),
-    healthHistoryQuestionnaire: placeholder(
-      "the URL for Health History Questionnaire instructions",
-    ),
-    studentActivitiesAssistanceFund: placeholder(
-      "the Northwestern Student Activities Assistance Fund (SAAF) URL",
-    ),
+    signup: url("https://docs.google.com/document/d/1s9ig-MvM_hrYpQllxU1MUBe9noAdaCYpl765OjSpNOM/edit?usp=sharing"),
+    waiver: url("https://drive.google.com/file/d/1ITFt-ICYkr7GVEWyb864dTsivwVHlqGb/"),
+    iMLeagues: url("https://docs.google.com/document/d/1nKx5UlVYWY73HNGO5rsEYa2JUEgNMpPDdmea-foUAx4/edit?usp=sharing"),
+    studentActivitiesAssistanceFund: url("https://www.northwestern.edu/studentorgs/saaf/")
   },
 });
 

@@ -58,8 +58,8 @@ export default function JoinPage() {
           <CtaLink href={site.links.waiver} className="link">
             Liability waiver
           </CtaLink>
-          <CtaLink href={site.links.healthHistoryQuestionnaire} className="link">
-            Health History Questionnaire instructions
+          <CtaLink href={site.links.iMLeagues} className="link">
+            IMLeagues instructions
           </CtaLink>
         </div>
       </Section>
@@ -82,11 +82,11 @@ export default function JoinPage() {
         </ul>
         <Callout title="If dues are a burden">
           <p className="mb-3">
-            Please look into the Student Activities Assistance Fund, or reach out to us and we will
+            Please look into the Student Activities Assistance Fund (SAAF), or reach out to us and we will
             see what we can do.
           </p>
           <CtaLink href={site.links.studentActivitiesAssistanceFund} className="link text-sm">
-            About the Student Activities Assistance Fund
+            Student Activities Assistance Fund
           </CtaLink>
         </Callout>
       </Section>
