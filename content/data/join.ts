@@ -2,6 +2,7 @@ import { defineContent, stepSchema, type Step } from "@/lib/content/schema";
 import { z } from "zod";
 
 const joinSchema = z.object({
+  summary: z.string().min(1),
   steps: z.array(stepSchema).min(1),
   eligibility: z.object({
     affiliation: z.string().min(1),
@@ -15,6 +16,7 @@ const joinSchema = z.object({
 });
 
 export const join: {
+  readonly summary: string;
   readonly steps: readonly Step[];
   readonly eligibility: { readonly affiliation: string; readonly options: readonly Step[] };
   readonly whatToWear: {
@@ -23,6 +25,9 @@ export const join: {
   };
   readonly dayOf: readonly string[];
 } = defineContent("content/data/join.ts", joinSchema, {
+  summary:
+    "There is no application or tryout. All you have to do is sign up for a practice, " +
+    "whenever you want to come.",
   steps: [
     {
       title: "Check that you can participate",

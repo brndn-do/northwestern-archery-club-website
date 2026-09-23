@@ -2,13 +2,12 @@ import { FaqAccordion } from "@/components/content/FaqAccordion";
 import { PhotoGrid } from "@/components/content/PhotoGrid";
 import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
-import { ButtonLink } from "@/components/ui/Button";
 import { Callout } from "@/components/ui/Callout";
-import { Card } from "@/components/ui/Card";
 import { CtaLink } from "@/components/ui/CtaLink";
 import { url } from "@/lib/content/url";
 import { dues } from "@content/data/dues";
 import { faq } from "@content/data/faq";
+import { join } from "@content/data/join";
 import { photos } from "@content/data/photos";
 import { practices } from "@content/data/practices";
 import { site } from "@content/data/site";
@@ -60,19 +59,13 @@ export default function HomePage() {
         </Callout>
       </Section>
 
-      <Section title="Before your first practice" surface>
-        <div className="grid gap-4 sm:grid-cols-3">
-          <Card title="No experience needed">
-            Most people at their first practice have never shot a bow. That is normal here.
-          </Card>
-          <Card title="Who runs practice">
-            Most of our officers are USA Archery-certified Instructors. They run the beginner
-            lessons.
-          </Card>
-          <Card title="Equipment">
-            Club bows are recurve barebow. Wear closed-toed shoes; bring nothing else.
-          </Card>
-        </div>
+      <Section title="How to join" surface>
+        <p className="text-muted mb-6 max-w-2xl">{join.summary}</p>
+        <p className="mt-8">
+          <CtaLink href={url("/join")} className="link">
+            More info
+          </CtaLink>
+        </p>
       </Section>
 
       <Section title="Photos">
