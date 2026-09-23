@@ -3,6 +3,7 @@ import { site } from "@content/data/site";
 import Image from "next/image";
 
 const navigation = [
+  { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/join", label: "Join" },
   { href: "/faq", label: "FAQ" },
