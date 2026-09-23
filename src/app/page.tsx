@@ -85,7 +85,7 @@ export default function HomePage() {
       <Section title="Common questions" surface>
         <FaqAccordion entries={previewQuestions} />
         <p className="mt-8">
-          <CtaLink href={url("/faq")} className="text-accent underline underline-offset-4">
+          <CtaLink href={url("/faq")} className="link">
             Read all questions
           </CtaLink>
         </p>

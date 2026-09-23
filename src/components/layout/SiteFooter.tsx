@@ -10,16 +10,13 @@ export function SiteFooter() {
         <ul className="mb-8 flex flex-wrap gap-x-6 gap-y-3">
           {socials.map((social) => (
             <li key={social.label}>
-              <CtaLink
-                href={social.href}
-                className="hover:text-accent underline underline-offset-4"
-              >
+              <CtaLink href={social.href} className="link">
                 {social.label}
               </CtaLink>
             </li>
           ))}
           <li>
-            <CtaLink href={emailLink} className="hover:text-accent underline underline-offset-4">
+            <CtaLink href={emailLink} className="link">
               {site.email}
             </CtaLink>
           </li>

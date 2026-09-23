@@ -7,6 +7,7 @@
   --color-text: #171717;
   --color-muted: #575757;
   --color-accent: #4e2a84;
+  --color-accent-hover: #1d0235;
   --color-accent-contrast: #ffffff;
 
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
@@ -23,7 +24,18 @@
     --color-text: #ededed;
     --color-muted: #a3a3a3;
     --color-accent: #a78bdb;
+    --color-accent-hover: #ccc4df;
     --color-accent-contrast: #121212;
+  }
+}
+
+@utility link {
+  color: var(--color-accent);
+  text-decoration-line: underline;
+  text-underline-offset: 4px;
+
+  &:hover {
+    color: var(--color-accent-hover);
   }
 }
 

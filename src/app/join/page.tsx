@@ -55,13 +55,10 @@ export default function JoinPage() {
           ))}
         </ul>
         <div className="mt-6 flex flex-wrap gap-4 text-sm">
-          <CtaLink href={site.links.waiver} className="text-accent underline underline-offset-4">
+          <CtaLink href={site.links.waiver} className="link">
             Liability waiver
           </CtaLink>
-          <CtaLink
-            href={site.links.healthHistoryQuestionnaire}
-            className="text-accent underline underline-offset-4"
-          >
+          <CtaLink href={site.links.healthHistoryQuestionnaire} className="link">
             Health History Questionnaire instructions
           </CtaLink>
         </div>
@@ -88,10 +85,7 @@ export default function JoinPage() {
             Please look into the Student Activities Assistance Fund, or reach out to us and we will
             see what we can do.
           </p>
-          <CtaLink
-            href={site.links.studentActivitiesAssistanceFund}
-            className="text-accent text-sm underline underline-offset-4"
-          >
+          <CtaLink href={site.links.studentActivitiesAssistanceFund} className="link text-sm">
             About the Student Activities Assistance Fund
           </CtaLink>
         </Callout>

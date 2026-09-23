@@ -8,7 +8,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     p: (props) => <p className="text-muted mb-4 leading-relaxed" {...props} />,
     ul: (props) => <ul className="text-muted mb-4 list-disc pl-5" {...props} />,
     li: (props) => <li className="mb-1" {...props} />,
-    a: (props) => <a className="text-accent underline underline-offset-4" {...props} />,
+    a: (props) => <a className="link" {...props} />,
     strong: (props) => <strong className="text-text font-medium" {...props} />,
     ...components,
   };

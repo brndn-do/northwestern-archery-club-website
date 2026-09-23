@@ -22,7 +22,7 @@ export default function ContactPage() {
           Discord.
         </p>
         <p className="text-lg">
-          <CtaLink href={emailLink} className="text-accent underline underline-offset-4">
+          <CtaLink href={emailLink} className="link">
             {site.email}
           </CtaLink>
         </p>
@@ -33,7 +33,7 @@ export default function ContactPage() {
           {socials.map((social) => (
             <li key={social.label} className="border-border rounded-lg border p-5">
               <h3 className="mb-1 font-medium">
-                <CtaLink href={social.href} className="text-accent underline underline-offset-4">
+                <CtaLink href={social.href} className="link">
                   {social.label}
                 </CtaLink>
               </h3>
