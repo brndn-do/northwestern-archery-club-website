@@ -1,5 +1,5 @@
 import { defineContent, siteUrlSchema } from "@/lib/content/schema";
-import { placeholder, url } from "@/lib/content/url";
+import { url } from "@/lib/content/url";
 import { z } from "zod";
 
 const siteSchema = z.object({

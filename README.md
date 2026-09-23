@@ -11,8 +11,6 @@ deliberate placeholders standing in for content the club has not supplied yet:
 
 - The practice signup URL, the liability waiver, the Health History
   Questionnaire instructions, and the Student Activities Assistance Fund link
-- The club logo, in the header
-- All six home page photos
 
 Placeholders render on the page as labelled frames stating what should replace
 them, so nothing silently looks finished when it is not. Run

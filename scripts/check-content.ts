@@ -1,4 +1,3 @@
-import { photos } from "@content/data/photos";
 import { site } from "@content/data/site";
 import { socials } from "@content/data/socials";
 
@@ -37,4 +36,3 @@ console.log(`${found.length} placeholder link(s):`);
 for (const item of found) {
   console.log(`  ${item.location} — replace with ${item.replaceWith}`);
 }
-console.log(`\n${photos.length} photo slot(s) awaiting images.`);

@@ -59,17 +59,17 @@ export default function HomePage() {
         </Callout>
       </Section>
 
-      <Section title="How to join" surface>
+      <Section title="Photos" surface>
+        <PhotoGrid photos={photos} />
+      </Section>
+
+      <Section title="How to join">
         <p className="text-muted mb-6 max-w-2xl">{join.summary}</p>
         <p className="mt-8">
           <CtaLink href={url("/join")} className="link">
             More info
           </CtaLink>
         </p>
-      </Section>
-
-      <Section title="Photos">
-        <PhotoGrid photos={photos} />
       </Section>
 
       <Section title="Common questions" surface>

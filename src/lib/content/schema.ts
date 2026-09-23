@@ -56,9 +56,10 @@ export const faqEntrySchema = z.object({
 });
 
 export const photoSchema = z.object({
-  id: z.string().min(1),
-  /** Describes the photo that belongs here, and doubles as its alt text. */
-  describes: z.string().min(1),
+  /** Site-relative path to the image, e.g. "/images/photos/coaching.jpg". */
+  src: z.string().min(1),
+  /** Describes the photo for people who cannot see it. */
+  alt: z.string().min(1),
 });
 
 export type SocialLink = z.infer<typeof socialLinkSchema>;

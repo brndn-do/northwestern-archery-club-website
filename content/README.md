@@ -60,13 +60,17 @@ URL, swap `placeholder("...")` for `url("...")`.
 
 ## Photos
 
-The home page currently shows six placeholder frames. Each one describes the
-photo that belongs in it.
+The home page shows every photo listed in `data/photos.ts`, in order. Each is
+cropped to a 4:3 frame around its center, so keep the subject near the middle.
 
-Photos are not resized automatically, so before adding one: export it at
-roughly 1600px wide, save it as a `.jpg` under 300KB, and put it in
-`public/images/`. Then ask a maintainer to wire it up — adding real images
-needs a small code change the first time.
+Photos are not resized automatically, so before adding one:
+
+1. Export it at about 1200px on the long side, as a `.jpg` under 300KB.
+2. Put it in `public/images/photos/`, with a lowercase name like
+   `spring-social.jpg`.
+3. Add an entry to `data/photos.ts`. `src` is the path without `public`
+   (`/images/photos/spring-social.jpg`), and `alt` describes the photo for
+   people using screen readers.
 
 ## Things to know
 
