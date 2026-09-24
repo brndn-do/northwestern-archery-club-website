@@ -72,7 +72,7 @@ export default function HomePage() {
         </p>
       </Section>
 
-      <Section title="Common questions">
+      <Section title="Frequently asked questions">
         <FaqAccordion entries={previewQuestions} />
         <p className="mt-8">
           <CtaLink href={url("/faq")} className="link">
