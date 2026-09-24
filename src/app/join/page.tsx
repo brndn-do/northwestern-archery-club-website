@@ -84,7 +84,7 @@ export default function JoinPage() {
         <Callout title="If dues are a burden">
           <p className="mb-3">
             Please look into the Student Activities Assistance Fund (SAAF), or reach out to us and
-            we will see what we can do.
+            we will see what we can do. We do not want cost to keep anyone out.
           </p>
           <CtaLink href={site.links.studentActivitiesAssistanceFund} className="link text-sm">
             Student Activities Assistance Fund

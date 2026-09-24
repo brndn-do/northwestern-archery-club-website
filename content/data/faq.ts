@@ -121,7 +121,7 @@ export const faq: readonly FaqEntry[] = defineContent(
       category: "Cost",
       question: "What if the dues are a burden for me?",
       answer:
-        "Please look into the Student Activities Assistance Fund, or reach out to us directly " +
+        "Please look into the Student Activities Assistance Fund (SAAF), or reach out to us directly " +
         "and we will see what we can do. We do not want cost to keep anyone out.",
     },
     {
