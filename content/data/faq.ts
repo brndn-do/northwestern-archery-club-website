@@ -88,12 +88,6 @@ export const faq: readonly FaqEntry[] = defineContent(
     },
     {
       category: "Logistics",
-      question: "What if I signed up but cannot make it?",
-      answer:
-        "Remove yourself from the signup list or waitlist as soon as possible so someone else can take your spot.",
-    },
-    {
-      category: "Logistics",
       question: "Can I arrive late or leave early?",
       answer:
         "Please try to arrive on time, since it makes check-in much easier for our exec " +
