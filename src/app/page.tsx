@@ -17,7 +17,7 @@ const previewQuestions = faq.slice(0, 4);
 export default function HomePage() {
   return (
     <>
-      <Container className="py-8">
+      <Container className="pt-12 pb-8 sm:pt-24">
         <h1 className="font-display max-w-3xl text-5xl sm:text-6xl">{site.name}</h1>
         <p className="text-muted mt-4 max-w-2xl text-lg">{site.tagline}</p>
       </Container>
