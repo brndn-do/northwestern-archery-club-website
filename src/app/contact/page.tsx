@@ -18,8 +18,8 @@ export default function ContactPage() {
       <Container className="py-12 sm:py-16">
         <h1 className="font-display mb-6 text-4xl sm:text-5xl">Contact us</h1>
         <p className="text-muted mb-6 max-w-2xl">
-          If the FAQ does not answer your question, email us. We also read Instagram, GroupMe, and
-          Discord.
+          If the FAQ does not answer your question, contact us. We also read GroupMe, Instagram and
+          Discord messages.
         </p>
         <p className="text-lg">
           <CtaLink href={emailLink} className="link">

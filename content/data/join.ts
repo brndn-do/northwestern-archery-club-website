@@ -47,8 +47,7 @@ export const join: {
     },
     {
       title: "Sign up for a practice",
-      body:
-        "Spots are limited and are first come, first served. If a practice is full, you can join a waitlist.",
+      body: "Spots are limited and are first come, first served. If a practice is full, you can join a waitlist.",
     },
     {
       title: "Show up and check in",
