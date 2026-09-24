@@ -107,7 +107,7 @@ export const faq: readonly FaqEntry[] = defineContent(
       answer:
         "Closed-toed shoes, long hair tied back, and nothing loose or baggy. " +
         "Avoid brimmed hats and large accessories. We recommend wearing a lightweight, short-sleeved T-shirt " +
-        "and jeans or pants with a belt loop or pockets.",
+        "and jeans or pants with belt loops or pockets.",
     },
     {
       category: "Cost",

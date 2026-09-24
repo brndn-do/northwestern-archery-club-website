@@ -49,6 +49,10 @@ export const stepSchema = z.object({
   body: z.string().min(1),
 });
 
+export const eligibilityOptionSchema = stepSchema.extend({
+  link: z.object({ label: z.string().min(1), href: siteUrlSchema }),
+});
+
 export const faqEntrySchema = z.object({
   category: z.enum(["Getting started", "Logistics", "Cost", "Equipment"]),
   question: z.string().min(1),
@@ -66,5 +70,6 @@ export type SocialLink = z.infer<typeof socialLinkSchema>;
 export type Practice = z.infer<typeof practiceSchema>;
 export type Fact = z.infer<typeof factSchema>;
 export type Step = z.infer<typeof stepSchema>;
+export type EligibilityOption = z.infer<typeof eligibilityOptionSchema>;
 export type FaqEntry = z.infer<typeof faqEntrySchema>;
 export type Photo = z.infer<typeof photoSchema>;

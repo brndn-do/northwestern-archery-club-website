@@ -8,7 +8,7 @@ export function SiteFooter() {
       <div className="mx-auto w-full max-w-5xl px-4 py-10 sm:px-6">
         <h2 className="font-display mb-4 text-2xl">Find us</h2>
         <ul className="mb-8 flex flex-wrap gap-x-6 gap-y-3">
-          {socials.map((social) => (
+          {Object.values(socials).map((social) => (
             <li key={social.label}>
               <CtaLink href={social.href} className="link">
                 {social.label}

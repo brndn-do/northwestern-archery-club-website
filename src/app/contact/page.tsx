@@ -30,7 +30,7 @@ export default function ContactPage() {
 
       <Section title="Find us online">
         <ul className="grid gap-4 sm:grid-cols-2">
-          {socials.map((social) => (
+          {Object.values(socials).map((social) => (
             <li key={social.label} className="border-border rounded-lg border p-5">
               <h3 className="mb-1 font-medium">
                 <CtaLink href={social.href} className="link">

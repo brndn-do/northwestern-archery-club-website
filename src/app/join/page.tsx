@@ -8,6 +8,7 @@ import { dues } from "@content/data/dues";
 import { join } from "@content/data/join";
 import { practices } from "@content/data/practices";
 import { site } from "@content/data/site";
+import { socials } from "@content/data/socials";
 import Intro from "@content/prose/join-intro.mdx";
 
 export const metadata = pageMetadata(
@@ -24,13 +25,16 @@ export default function JoinPage() {
         <div className="max-w-2xl">
           <Intro />
         </div>
-        <div className="mt-6">
-          <ButtonLink href={site.links.signup}>Sign up for a practice</ButtonLink>
+        <div className="mt-6 flex flex-wrap gap-4">
+          <ButtonLink href={socials.emailList.href}>Join the email list</ButtonLink>
+          <ButtonLink href={socials.groupMe.href} variant="secondary">
+            Join the GroupMe
+          </ButtonLink>
         </div>
       </Container>
 
-      <Section title="How it works">
-        <ol className="grid gap-6 sm:grid-cols-2">
+      <Section title="How to join a practice">
+        <ol className="grid gap-6">
           {join.steps.map((step, index) => (
             <li key={step.title}>
               <h3 className="mb-1 font-medium">
@@ -45,27 +49,24 @@ export default function JoinPage() {
 
       <Section title="Who can participate">
         <p className="text-muted mb-6 max-w-2xl">{join.eligibility.affiliation}</p>
-        <p className="mb-4 font-medium">You also need one of the following:</p>
+        <p className="mb-4 font-medium">You also need to do one of the following:</p>
         <ul className="grid gap-6 sm:grid-cols-2">
           {join.eligibility.options.map((option) => (
             <li key={option.title} className="border-border rounded-lg border p-5">
               <h3 className="mb-1 font-medium">{option.title}</h3>
               <p className="text-muted text-sm">{option.body}</p>
+              <p className="mt-3 text-sm">
+                <CtaLink href={option.link.href} className="link">
+                  {option.link.label}
+                </CtaLink>
+              </p>
             </li>
           ))}
         </ul>
-        <div className="mt-6 flex flex-wrap gap-4 text-sm">
-          <CtaLink href={site.links.waiver} className="link">
-            Liability waiver
-          </CtaLink>
-          <CtaLink href={site.links.iMLeagues} className="link">
-            IMLeagues instructions
-          </CtaLink>
-        </div>
       </Section>
 
       <Section title="Signups">
-        <p className="text-muted max-w-2xl">{practices.capacity}</p>
+        <p className="text-muted max-w-2xl">{practices.signups}</p>
       </Section>
 
       <Section title="Dues">
@@ -122,6 +123,13 @@ export default function JoinPage() {
             </li>
           ))}
         </ol>
+      </Section>
+
+      <Section title="Stay updated">
+        <p className="text-muted mb-6 max-w-2xl">{join.stayUpdated}</p>
+        <ButtonLink href={socials.groupMe.href} variant="secondary">
+          Join the GroupMe
+        </ButtonLink>
       </Section>
     </>
   );
