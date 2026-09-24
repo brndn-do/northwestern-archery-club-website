@@ -2,7 +2,6 @@ import { Container } from "@/components/layout/Container";
 import { Section } from "@/components/layout/Section";
 import { CtaLink } from "@/components/ui/CtaLink";
 import { pageMetadata } from "@/lib/metadata";
-import { practices } from "@content/data/practices";
 import { emailLink, site } from "@content/data/site";
 import { socials } from "@content/data/socials";
 
@@ -38,17 +37,6 @@ export default function ContactPage() {
                 </CtaLink>
               </h3>
               <p className="text-muted text-sm">{social.detail}</p>
-            </li>
-          ))}
-        </ul>
-      </Section>
-
-      <Section title="Find us in person">
-        <p className="text-muted mb-2">{practices.location}</p>
-        <ul className="text-muted list-disc pl-5">
-          {practices.schedule.map((practice) => (
-            <li key={practice.day}>
-              {practice.day}, {practice.startTime}&ndash;{practice.endTime}
             </li>
           ))}
         </ul>
