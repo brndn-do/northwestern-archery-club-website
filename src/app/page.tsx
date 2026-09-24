@@ -17,7 +17,7 @@ const previewQuestions = faq.slice(0, 4);
 export default function HomePage() {
   return (
     <>
-      <Container className="py-12 sm:py-16">
+      <Container className="py-8">
         <h1 className="font-display max-w-3xl text-5xl sm:text-6xl">{site.name}</h1>
         <p className="text-muted mt-4 max-w-2xl text-lg">{site.tagline}</p>
       </Container>
@@ -25,7 +25,7 @@ export default function HomePage() {
       <Section>
         <dl className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <dt className="text-sm font-medium tracking-wide uppercase">When</dt>
+            <dt className="text-lg font-medium tracking-wide">When</dt>
             <dd className="text-muted mt-1 text-sm">
               {practices.schedule.map((practice) => (
                 <span key={practice.day} className="block">
@@ -35,17 +35,17 @@ export default function HomePage() {
             </dd>
           </div>
           <div>
-            <dt className="text-sm font-medium tracking-wide uppercase">Where</dt>
+            <dt className="text-lg font-medium tracking-wide">Where</dt>
             <dd className="text-muted mt-1 text-sm">{practices.location}</dd>
           </div>
           <div>
-            <dt className="text-sm font-medium tracking-wide uppercase">Cost</dt>
+            <dt className="text-lg font-medium tracking-wide">Cost</dt>
             <dd className="text-muted mt-1 text-sm">
               {dues.perPractice}, or {dues.perQuarter}, except for our quarterly free practices.
             </dd>
           </div>
           <div>
-            <dt className="text-sm font-medium tracking-wide uppercase">Equipment</dt>
+            <dt className="text-lg font-medium tracking-wide">Equipment</dt>
             <dd className="text-muted mt-1 text-sm">
               Provided. Recurve barebow, plus instruction for beginners.
             </dd>
