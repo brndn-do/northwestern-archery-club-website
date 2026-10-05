@@ -6,18 +6,16 @@ how to get in touch.
 
 ## Status
 
-Work in progress. All five pages are built and deploy, but the site ships with
-deliberate placeholders standing in for content the club has not supplied yet:
+Live at <https://northwestern-archery.netlify.app> and complete for the
+current academic year. All five pages are built and every link is filled in.
 
-- The practice signup URL, the liability waiver, the Health History
-  Questionnaire instructions, and the Student Activities Assistance Fund link
+Day-to-day work from here is keeping the content current — practice times,
+links, dues, FAQ, photos — through [`content/`](content/README.md). If a link
+is ever removed or reset, it renders as a labelled placeholder frame rather
+than a broken link; `npm run check:content` lists any that remain.
 
-Placeholders render on the page as labelled frames stating what should replace
-them, so nothing silently looks finished when it is not. Run
-`npm run check:content` to list the unresolved links.
-
-Not yet done: a custom domain (the site runs on a `netlify.app` subdomain), and
-an Open Graph image for link previews.
+Not done, and not needed to run the site: a custom domain (the site runs on a
+`netlify.app` subdomain), and an Open Graph image for link previews.
 
 ## Running it locally
 
