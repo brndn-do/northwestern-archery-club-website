@@ -28,7 +28,7 @@ export const site = defineContent("content/data/site.ts", siteSchema, {
     "Equipment and instruction provided. Two practices a week at Blomquist Recreation Center.",
   founded: 2013,
   email: "archery@u.northwestern.edu",
-  origin: "https://northwestern-archery.netlify.app",
+  origin: "https://northwesternarchery.com",
   links: {
     signup: url(
       "https://docs.google.com/document/d/1s9ig-MvM_hrYpQllxU1MUBe9noAdaCYpl765OjSpNOM/edit?usp=sharing",
