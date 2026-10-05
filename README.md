@@ -6,7 +6,7 @@ how to get in touch.
 
 ## Status
 
-Live at <https://northwestern-archery.netlify.app> and complete for the
+Live at <https://northwesternarchery.com> and complete for the
 current academic year. All five pages are built and every link is filled in.
 
 Day-to-day work from here is keeping the content current — practice times,
@@ -14,8 +14,8 @@ links, dues, FAQ, photos — through [`content/`](content/README.md). If a link
 is ever removed or reset, it renders as a labelled placeholder frame rather
 than a broken link; `npm run check:content` lists any that remain.
 
-Not done, and not needed to run the site: a custom domain (the site runs on a
-`netlify.app` subdomain), and an Open Graph image for link previews.
+Not done, and not needed to run the site: an Open Graph image for link
+previews.
 
 ## Running it locally
 
