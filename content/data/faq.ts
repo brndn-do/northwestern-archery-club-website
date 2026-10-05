@@ -30,8 +30,7 @@ export const faq: readonly FaqEntry[] = defineContent(
     {
       category: "Getting started",
       question: "Where do you send out announcements?",
-      answer:
-        "We send out announcements via our email list and GroupMe.",
+      answer: "We send out announcements via our email list and GroupMe.",
     },
     {
       category: "Getting started",
